@@ -130,8 +130,8 @@ summary(impact.localTrend, "report")
 ## 3.4.1 semi local trends  
 set.seed(2468)
 ss2 <- AddSemilocalLinearTrend(list(), PAratio.no)
-bsts.model <- bsts(PAratio.no ~ data$VAagr+data$VAind+data$VAser+data$GDPcap+data$POPdens+data$ENGOmem+data$ENVexp+data$ENVinc, ss2, niter = 10000)
-impact.semiLocalTrend <- CausalImpact(bsts.model = bsts.model, post.period.response = post.period.response)
+bsts.model2 <- bsts(PAratio.no ~ data$VAagr+data$VAind+data$VAser+data$GDPcap+data$POPdens+data$ENGOmem+data$ENVexp+data$ENVinc, ss2, niter = 10000)
+impact.semiLocalTrend <- CausalImpact(bsts.model = bsts.model2, post.period.response = post.period.response)
 summary(impact.semiLocalTrend)
 summary(impact.semiLocalTrend, "report")
 
