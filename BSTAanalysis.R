@@ -136,7 +136,7 @@ summary(impact.semiLocalTrend)
 summary(impact.semiLocalTrend, "report")
 
 
-# 3 Reporting Monte Carlo Standard Errors ###########################################
+# 4 Reporting Monte Carlo Standard Errors ###########################################
 
 library(plyr)
 require(LaplacesDemon)
