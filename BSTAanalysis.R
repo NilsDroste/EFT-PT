@@ -71,7 +71,7 @@ summary(impact.base)
 summary(impact.base, "report")
 
 # display confidence intervals of estimates for post-intervention
-round(impact$series[c(14,20),c(4,5,10,11,13,14)],3)
+round(impact.base$series[c(14,20),c(4,5,10,11,13,14)],3)
 
 # 3 Robustness Check ###########################################
 
@@ -157,7 +157,7 @@ for(i in c(2:19)){
     }}
   if(i==4){
     for(j in c(1:9)){
-      MonCarlSE[j,i] <- MCSE(impact.base$model$bsts.model$coefficients[,j])/sd(impact$model$bsts.model$coefficients[,j])*100
+      MonCarlSE[j,i] <- MCSE(impact.base$model$bsts.model$coefficients[,j])/sd(impact.base$model$bsts.model$coefficients[,j])*100
     }}
   if(i==5){
     for(j in c(1:9)){
@@ -221,3 +221,6 @@ for(i in c(2:19)){
     }}
 }
 
+
+#out
+print(xtable(MonCarlSE[-1,],display=rep('e',20)), file="mcse.tex")

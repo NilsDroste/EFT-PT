@@ -7,4 +7,4 @@ The paper has recently been presented at the 2016 Latin American Meeting of the 
 
 Nils Droste, Claudia Becker, Irene Ring, Rui Santos (2017)
 ### Decentralization Effects in Ecological Fiscal Transfers
-#### The Case of Portugal
+#### A Bayesian Structural Time Series Analysis for the Case of Portugal
