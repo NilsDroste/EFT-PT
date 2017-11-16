@@ -223,4 +223,5 @@ for(i in c(2:19)){
 
 
 #out
+require(xtable)
 print(xtable(MonCarlSE[-1,],display=rep('e',20)), file="mcse.tex")
